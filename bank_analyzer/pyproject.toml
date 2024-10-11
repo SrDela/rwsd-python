@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "bank-analyzer"
+version = "0.1.0"
+description = "Real World Software Development Book Exercise"
+authors = ["Andres De Las Salas <andresdlassalas@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+coverage = "^7.4.4"
+mkdocs = "^1.5.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+markers = []
+
+[tool.coverage.run]
+omit = [
+  "*/.local/*",
+  "src/models/*",
+  "*/tests/*",
+  "*/.pytest_cache/*",
+  "*/.venv/*",
+  "*/.vscode/*",
+  "*/__pycache__/*",
+  "*/interfaces/*",
+]

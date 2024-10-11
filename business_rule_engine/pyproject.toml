@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "bussiness-rules-engine"
+version = "0.1.0"
+description = "Real World Software Development Book's Exercise"
+authors = ["Andres De Las Salas <andresdlassalas@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+coverage = "^7.4.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

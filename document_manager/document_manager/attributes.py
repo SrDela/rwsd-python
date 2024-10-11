@@ -1,0 +1,8 @@
+PATH = "path"
+PATIENT = "patient"
+ADDRESS = "address"
+BODY = "body"
+WIDTH = "width"
+HEIGHT = "height"
+TYPE = "type"
+AMOUNT = "amount"
